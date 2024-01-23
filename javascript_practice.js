@@ -149,20 +149,20 @@
 // console.log(cartTotal);
 // ======== //
 
-function animalCount(mile){
-    const first10 = 10;
-    const second10=50;
-    if(mile <=10){
-        const count = mile * first10;
-        return count;
-    }
-    else if(mile <= 20){
-        const firstTenMile = 10 * first10;
-        const restMile = mile - 10;
-        const secondTenMile = restMile * second10;
-        const total = firstTenMile + secondTenMile
-        return total;
-    }
-}
-const totalAnimal = animalCount(11);
-console.log(totalAnimal);
+// function animalCount(mile){
+//     const first10 = 10;
+//     const second10=50;
+//     if(mile <=10){
+//         const count = mile * first10;
+//         return count;
+//     }
+//     else if(mile <= 20){
+//         const firstTenMile = 10 * first10;
+//         const restMile = mile - 10;
+//         const secondTenMile = restMile * second10;
+//         const total = firstTenMile + secondTenMile
+//         return total;
+//     }
+// }
+// const totalAnimal = animalCount(11);
+// console.log(totalAnimal);
