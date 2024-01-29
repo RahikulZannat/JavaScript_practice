@@ -6,7 +6,7 @@ const products = [{name: 'samsung s23 phone', price: 120000 },
 {name: 'macbook pro laptop', price: 1200000 }
 ];
 
-function searchProduct(product, searchText){
+function searchProduct(products, searchText){
     const matched=[];
     for(const product of products){
         const name = product.name;
