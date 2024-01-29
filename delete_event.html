@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Delete Event Practice</h1>
+    <section>
+        <h3 id="content">Delete this text message</h3>
+        <input id="confirm-dlt" type="text" placeholder="Pls type delete">
+        <button id="delete-btn" disabled>Delete</button>
+    </section>
+    <script>
+        document.getElementById('delete-btn').addEventListener('click',function(){
+            document.getElementById('content').style.display = 'none';
+        })
+        document.getElementById('confirm-dlt').addEventListener('focus',function(){
+            document.body.style.backgroundColor = 'red';
+        })
+        document.getElementById('confirm-dlt').addEventListener('keyup',function(event){
+            const deleteBtn = document.getElementById('delete-btn');
+            if(event.target.value == 'delete'){
+                deleteBtn.removeAttribute('disabled');
+            }
+            else{
+                deleteBtn.setAttribute('disabled',true);
+            }
+            
+        })
+    </script>
+</body>
+</html>
